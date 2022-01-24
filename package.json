@@ -1,10 +1,10 @@
 {
-  "name": "next-plugin-antd-less",
-  "version": "1.8.0",
+  "name": "@erda-ui/next-plugin-antd-less",
+  "version": "1.0.0",
   "main": "index.js",
   "sideEffect": false,
   "author": "Jason Feng <solidzoro@live.com>",
-  "description": "Use Antd (with Less) with Next.js, Zero Dependency on other Next-Plugins.",
+  "description": "used to compatible erda-ui-components, Use Antd (with Less) with Next.js, Zero Dependency on other Next-Plugins.",
   "license": "MIT",
   "homepage": "https://github.com/SolidZORO/next-plugin-antd-less",
   "repository": {

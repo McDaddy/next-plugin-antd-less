@@ -502,7 +502,7 @@ function handleAntdInServer(webpackConfig, nextConfig) {
         // ctx eqauls { context, request, contextInfo, getResolve }
         // https://webpack.js.org/configuration/externals/#function
         (ctx, cb) => {
-          if (ctx.request.match(ANTD_STYLE_REGX)) return cb();
+          if (ctx.request.match(ANTD_STYLE_REGX) || ctx.request.startsWith('erda-ui-components')) return cb();
 
           // next's params are different when webpack5 enable
           // https://github.com/vercel/next.js/blob/0425763ed6a90f4ff99ab2ff37821da61d895e09/packages/next/build/webpack-config.ts#L770
